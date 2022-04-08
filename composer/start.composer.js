@@ -7,7 +7,7 @@ command.command('start', async (ctx) => {
 	try {
 		await ctx.reply(`
 Привет ${ctx.message.from.first_name ? ctx.message.from.first_name : 'Анон'}!
-Давай балуйся
+Я просто модератор
     `)
 	} catch (e) {
 		ctx.reply('Я УПАЛЬ!')
