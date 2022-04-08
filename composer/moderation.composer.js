@@ -3,6 +3,9 @@ const moderation = new Composer()
 moderation.on('photo', async (ctx) => {
     console.log(ctx.update.message.photo)
 })
+moderation.on('sticker', async (ctx) => {
+    console.log(ctx.update.update_id)
+})
 moderation.on('message', async (ctx) => {
         const word = ctx.message.text.toLowerCase()
         try {
