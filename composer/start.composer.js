@@ -10,18 +10,8 @@ command.command('start', async (ctx) => {
 Я просто модератор
     `)
 	} catch (e) {
-		ctx.reply('Я УПАЛЬ!')
+		console.log(e)
 	}
 })
-
-command.command('help', async (ctx) => {
-	try {
-		await ctx.reply(text.commands)
-	} catch (e) {
-		ctx.reply('Я УПАЛЬ!')
-	}
-})
-
-
 
 module.exports = command
