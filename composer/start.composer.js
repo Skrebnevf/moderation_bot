@@ -2,7 +2,7 @@ const { Composer } = require ('telegraf')
 const command = new Composer()
 const text = require ('../const')
 
-
+//Обработка команды /start возможно пригодится в будующем
 command.command('start', async (ctx) => {
 	try {
 		await ctx.reply(`
