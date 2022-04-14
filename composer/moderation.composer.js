@@ -19,14 +19,17 @@ const words = [
         "требования в кандидату",
         "требования к кандидатам",
         "cкам проект",
+        "join this channel",
         "scam проект",
         "scam project",
-        "заинтересованным писать в лс",
-        "волынская резьня"
+        "𝐣𝐨𝐢𝐧 𝐭𝐡𝐢𝐬 𝐜𝐡𝐚𝐧𝐧𝐞𝐥",
+        "волынская резьня",
+        "trader"
 ]
 
 //Функция "отлова сообщения"
 moderation.on('message', async (ctx) => {
+        console.log(ctx.message)
         const wordList = words
         if(ctx.message.text) {
             const word = ctx.message.text.toLowerCase()
